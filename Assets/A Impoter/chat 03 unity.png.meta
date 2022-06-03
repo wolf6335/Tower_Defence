@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 0d51942f390b7a44fa849459d0299166
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3795115964839415791
+    second: chat 03 unity_0
+  - first:
+      213: -7238242700268854059
+    second: chat 03 unity_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,7 +47,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +107,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: chat 03 unity_0
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 636
+        width: 2232
+        height: 1705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110355a232a055bc0800000000000000
+      internalID: -3795115964839415791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat 03 unity_1
+      rect:
+        serializedVersion: 2
+        x: 3331
+        y: 639
+        width: 2230
+        height: 1585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4296c2d989c8b90800000000000000
+      internalID: -7238242700268854059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

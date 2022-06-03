@@ -112,27 +112,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chat 04 unity_0
-      rect:
-        serializedVersion: 2
-        x: 680
-        y: 686
-        width: 8
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 496cbbc36e178f240800000000000000
-      internalID: 4825732234402842260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: chat 04 unity_1
       rect:
         serializedVersion: 2
@@ -141,7 +120,7 @@ TextureImporter:
         width: 1705
         height: 2186
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,7 +141,7 @@ TextureImporter:
         width: 1810
         height: 2171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneFader : MonoBehaviour {
-
-    public Image img;
-
+public class SceneFader : MonoBehaviour
+{
+    //Fonction
+    public Image ImgFade;
     public AnimationCurve curve;
 
     private void Start()
@@ -19,34 +19,32 @@ public class SceneFader : MonoBehaviour {
         StartCoroutine(FadeOut(scene));
     }
 
-    // Fade In = Ecran noir vers scene (disparition de l'écran noir)
+    //Fade in 
     IEnumerator FadeIn()
     {
         float t = 1f;
-
-        while(t > 0f)
+        while (t > 0f)
         {
             t -= Time.deltaTime;
             float a = curve.Evaluate(t);
-            img.color = new Color(0f, 0f, 0f, a);
+            ImgFade.color = new Color(0f, 0f, 0f, a);
             yield return 0;
         }
     }
 
-    // Fade Out = Scene vers écran noir (apparition de l'écran noir)
+    //Fade out 
     IEnumerator FadeOut(string scene)
     {
         float t = 0f;
-
         while (t < 1f)
         {
             t += Time.deltaTime;
             float a = curve.Evaluate(t);
-            img.color = new Color(0f, 0f, 0f, a);
+            ImgFade.color = new Color(0f, 0f, 0f, a);
             yield return 0;
         }
 
-        // le code ci-dessous ne se lit que lorsque le fondu est terminé
+        //le dode ci-dessus ne se lit que apres ce lui dans haut
         SceneManager.LoadScene(scene);
     }
 

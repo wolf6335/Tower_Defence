@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class finvideo : MonoBehaviour
 {
     private VideoPlayer m_VideoPlayer;
-
+    public GameObject Fond;
+    public GameObject RawVideo;
     void Awake () 
     {
         m_VideoPlayer = GetComponent<VideoPlayer>();
@@ -17,6 +18,8 @@ public class finvideo : MonoBehaviour
         Debug.Log("Event for movie end called");
 
         gameObject.SetActive(false);
+        RawVideo.SetActive(false);
+        Fond.SetActive(true);
 
     }
 

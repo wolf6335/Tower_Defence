@@ -21,7 +21,7 @@ public class WaveSpawner : MonoBehaviour {
     [SerializeField]
     private Text waveCountdownTimer;
 
-    private int waveIndex = 0;
+    [HideInInspector] public int waveIndex = 0;
 
     private void Start()
     {
@@ -35,7 +35,7 @@ public class WaveSpawner : MonoBehaviour {
             return;
         }
 
-        if (waveIndex == waves.Length)
+        if (waveIndex == waves.Length && PlayerStats.lives >= 0)
         {
             gameManager.WinLevel();
             this.enabled = false;

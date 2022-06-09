@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject completeLevelUI;
 
+    public WaveSpawner waveSpawner;
+
     private void Start()
     {
         gameIsOver = false;
@@ -22,10 +24,14 @@ public class GameManager : MonoBehaviour {
             return;
         }
 
-		if(PlayerStats.lives <= 0)
+		if(PlayerStats.lives == 0)
         {
+            Debug.Log("Ok Wavespawneer false");
+            WaveSpawner Waves = GetComponent<WaveSpawner>();
+            Waves.enabled = false;
             EndGame();
         }
+
 	}
 
     void EndGame()

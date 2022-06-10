@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject completeLevelUI;
 
-    public WaveSpawner waveSpawner;
+    private WaveSpawner waveSpawner;
+    public AudioSource Audio;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour {
             Debug.Log("Ok Wavespawneer false");
             WaveSpawner Waves = GetComponent<WaveSpawner>();
             Waves.enabled = false;
+            Audio.enabled = false;
             EndGame();
         }
 

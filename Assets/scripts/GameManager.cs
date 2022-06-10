@@ -40,11 +40,13 @@ public class GameManager : MonoBehaviour {
     {
         gameIsOver = true;
         gameOverUI.SetActive(true);
+        Audio.enabled = false;
     }
 
     public void WinLevel()
     {
         gameIsOver = true;
         completeLevelUI.SetActive(true);
+        Audio.enabled = false;
     }
 }
